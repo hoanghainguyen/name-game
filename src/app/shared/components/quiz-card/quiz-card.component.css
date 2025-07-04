@@ -1,0 +1,16 @@
+.quiz-card {
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  color: #d81b60;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+.result {
+  color: #388e3c;
+  font-weight: bold;
+}
