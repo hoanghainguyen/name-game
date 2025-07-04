@@ -10,6 +10,21 @@ h3 {
   color: #d81b60;
   font-family: 'Comic Sans MS', sans-serif;
 }
+.score {
+  color: #1976d2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.hint {
+  color: #f57c00;
+  font-style: italic;
+}
 .result {
   color: #388e3c;
   font-weight: bold;

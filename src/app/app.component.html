@@ -2,6 +2,11 @@
   <span>{{ title }}</span>
 </mat-toolbar>
 <div class="dashboard">
-  <app-quiz-card question="What animal says meow?" correctAnswer="Cat"></app-quiz-card>
-  <app-quiz-card question="Who wears a red cape?" correctAnswer="Superman"></app-quiz-card>
+  <button mat-raised-button color="accent" (click)="shuffleQuizzes()">New Game</button>
+  <app-quiz-card
+    *ngFor="let quiz of selectedQuizzes"
+    [question]="quiz.question"
+    [correctAnswer]="quiz.correctAnswer"
+    [hint]="quiz.hint">
+  </app-quiz-card>
 </div>

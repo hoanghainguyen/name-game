@@ -1,9 +1,14 @@
 <div class="quiz-card">
   <h3>{{ question }}</h3>
+  <p class="score">Score: {{ score }} stars</p>
   <mat-form-field appearance="fill">
     <mat-label>Type your guess</mat-label>
     <input matInput [formControl]="answer" placeholder="Your answer">
   </mat-form-field>
-  <button mat-raised-button color="primary" (click)="checkAnswer()">Check Answer</button>
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="checkAnswer()">Check Answer</button>
+    <button mat-raised-button color="accent" (click)="displayHint()">Show Hint</button>
+  </div>
+  <p *ngIf="showHint" class="hint">Hint: {{ hint }}</p>
   <p *ngIf="result" class="result">{{ result }}</p>
 </div>
